@@ -1,12 +1,6 @@
-meme_dict = {
-            "КРИНЖ": "Что-то очень странное или стыдное",
-            "ЛОЛ": "Что-то очень смешное"
-            }
-            
-word = input("Введите непонятное слово (большими буквами!): ")            
-            
-
-if word in meme_dict.keys():
-    print(meme_dict[word])
-else:
-    print("Я не знаю такого слова :(((")
+import random
+pas = ''
+len_pas = int(input("длина"))
+for x in range(len_pas):
+    pas = pas + random.choice(list('1234567890abcdefghigklmnopqrstuvyxwzABCDEFGHIGKLMNOPQRSTUVYXWZ')) 
+print(pas)
